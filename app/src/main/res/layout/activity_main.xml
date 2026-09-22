@@ -112,94 +112,119 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/sec_statistik"
             android:layout_width="0dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/header"
             android:layout_height="wrap_content"
             android:layout_marginTop="-28dp"
-            android:orientation="horizontal"
             android:paddingHorizontal="20dp"
-            android:id="@+id/sec_statistik">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header">
 
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/sec_statistik_kiri"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
-                android:layout_weight="1"
                 android:background="@drawable/bg_modern_card_rounded"
                 android:elevation="4dp"
-                android:orientation="vertical"
                 android:padding="18dp"
-                android:id="@+id/sec_statistik_kiri">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/sec_statistik_kanan"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_weight="1">
 
                 <TextView
+                    android:id="@+id/txt_didirikan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="DIDIRIKAN"
                     android:textColor="#64748B"
                     android:textSize="10sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
+                    android:id="@+id/txt_tanggal_didirikan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:text="2 Sept 1961"
                     android:textColor="#0F172A"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_didirikan" />
 
                 <TextView
+                    android:id="@+id/txt_yayasan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:text="Yayasan PPPK Petra"
                     android:textColor="#475569"
-                    android:textSize="11sp" />
+                    android:textSize="11sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_tanggal_didirikan"
+                    app:layout_constraintBottom_toBottomOf="parent" />
 
-            </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/sec_statistik_kanan"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:layout_weight="1"
                 android:background="@drawable/bg_modern_card_rounded"
                 android:elevation="4dp"
-                android:orientation="vertical"
                 android:padding="18dp"
-                android:id="@+id/sec_statistik_kanan">
+                app:layout_constraintStart_toEndOf="@id/sec_statistik_kiri"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_weight="1">
 
                 <TextView
+                    android:id="@+id/txt_mahasiswa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="MAHASISWA"
                     android:textColor="#64748B"
                     android:textSize="10sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
+                    android:id="@+id/txt_jumlah_mahasiswa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:text="7.000+"
                     android:textColor="#0F172A"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_mahasiswa" />
 
                 <TextView
+                    android:id="@+id/txt_status_mahasiswa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:text="Aktif &amp; Dinamis"
                     android:textColor="#0284C7"
-                    android:textSize="11sp" />
+                    android:textSize="11sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_jumlah_mahasiswa"
+                    app:layout_constraintBottom_toBottomOf="parent" />
 
-            </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-        </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
             android:layout_width="0dp"
